@@ -13,6 +13,7 @@ public class FullNameGenrator {
         String lastNAme= myScanner.nextLine();
         System.out.println("enter suffix");
         String Suffix = myScanner.nextLine();
+        nameList(firstName,middleName,lastNAme,Suffix);
 
 
     } public static String nameList(String name, String mname, String lname,String suffix) {
