@@ -2,7 +2,7 @@ package com.pluralsight;
 
 import java.util.Scanner;
 
-public class FullNameGenrator {
+public class FullNameGenerator {
     public static void main(String[] args) {
         Scanner myScanner= new Scanner (System.in);
         System.out.println("what is your first name?");
@@ -13,11 +13,13 @@ public class FullNameGenrator {
         String lastNAme= myScanner.nextLine();
         System.out.println("enter suffix");
         String Suffix = myScanner.nextLine();
-        System.out.println( nameList(firstName,middleName,lastNAme,Suffix) );;
+        nameList(firstName,middleName,lastNAme,Suffix);
+        String fullName = nameList(firstName,middleName,lastNAme,Suffix);
+        System.out.println( fullName);
 
 
     } public static String nameList(String name, String mname, String lname,String suffix) {
-        return  name + " " + (mname.isEmpty() ? " " : mname ) + lname + (suffix.isEmpty() ? " " : ", " + suffix);
+        return  name + " " + (mname.isEmpty() ? "" : mname ) + lname + (suffix.isEmpty() ? " " : ", " + suffix);
     }
 
 }
