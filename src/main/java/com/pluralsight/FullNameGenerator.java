@@ -16,7 +16,7 @@ public class FullNameGenerator {
         nameList(firstName,middleName,lastNAme,Suffix);
         String fullName = nameList(firstName,middleName,lastNAme,Suffix);
         System.out.println( fullName);
-       myScanner.close();
+        myScanner.close();
 
     } public static String nameList(String name, String mname, String lname,String suffix) {
         return  name + " " + (mname.isEmpty() ? "" : mname ) + lname + (suffix.isEmpty() ? " " : ", " + suffix);
