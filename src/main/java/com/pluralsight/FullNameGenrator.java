@@ -17,7 +17,7 @@ public class FullNameGenrator {
 
 
     } public static String nameList(String name, String mname, String lname,String suffix) {
-        return  name + " " + (mname.isEmpty() ? "" : mname ) + lname + (suffix.isEmpty() ? " " : ", " + suffix);
+        return  name + " " + (mname.isEmpty() ? " " : mname ) + lname + (suffix.isEmpty() ? " " : ", " + suffix);
     }
 
 }
