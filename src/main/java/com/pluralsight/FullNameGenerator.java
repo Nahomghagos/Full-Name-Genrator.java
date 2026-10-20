@@ -18,8 +18,21 @@ public class FullNameGenerator {
         System.out.println( fullName);
          myScanner.close();
 
-    } public static String nameList(String name, String mname, String lname,String suffix) {
-        return  name + " " + (mname.isEmpty() ? "" : mname ) + lname + (suffix.isEmpty() ? " " : ", " + suffix);
-    }
+    // public static String nameList(String name, String mname, String lname,String suffix)
+    // return  name + " " + (mname.isEmpty() ? "" : mname ) + lname + (suffix.isEmpty() ? " " : ", " + suffix);
+
+
+    }public static String nameList (String name, String mname, String lname,String suffix) {
+        String fname = name + " ";
+                if (!mname.isEmpty()) {
+                    fname += mname;
+                }
+                fname += lname;
+                        if (!suffix.isEmpty()) {
+                            fname += ", "+ suffix;
+                        }
+                        return fname;
 
 }
+
+    }
